@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: "Zilla Slab", serif;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff6a23;
+}
+.menu {
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.btn-item {
+  margin-left: 15px;
+}
+
+img{
+  width: 179.33px !important;
+  height: 179.33px !important;
+  border: 3px solid black !important; 
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+.alldisplay{
+  display: none;
+}
+
+.alldisplayblock{
+  display :block;
+}
+
+/* Mobil Görünüm */
+@media (max-width: 767px) {
+  .card {
+    margin: 5px 0px 250px 0 !important;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .btn-item {
+    margin: 8px !important;
+  }
+  
+  .title {
+    text-align: center !important;
+  }
+
+  /* Kart içindeki görsellerin boyutları için özel bir stil eklendi */
+  .card img {
+    width: 100% !important;
+    height: 300px !important;
+    margin-bottom: -470px !important;
+    height: 315px !important;
+    object-fit :cover !important; 
+    z-index: 1 !important;
+   
+  }
+  img{
+    
+    border: 0 !important;
+  }
+  /* Kart başlıklarını düzenleme */
+  
+    .card-title {
+      font-size: 1.5rem;
+  position: relative;
+    }
+  
+
+  /* Kart içeriğini düzenleme */
+  .card-body {
+    /* padding: 10rem; */
+    
+  overflow:auto !important;
+  }
+
+  /* Kart fiyatlarını düzenleme */
+  .text-danger {
+    margin-top: 5px;
+  }
+  .card-text{
+      display: none !important;
+  }
+  hr{
+    display: none !important;
+  }
+}
